@@ -1,0 +1,86 @@
+body {
+  text-align: center;
+  background-color: #fba1b7;
+}
+h1 {
+  font-family: "Lucida Handwriting", "Courier New", monospace;
+}
+.navigation {
+  text-align: center;
+}
+ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 200px;
+  grid-gap: 80px;
+}
+.brain {
+  display: block;
+  align: left;
+}
+.goals,
+.mywork {
+  background-color: #dfccfb;
+}
+.knowledge,
+.hobbies {
+  background-color: #beadfa;
+}
+p {
+  background-color: #dfccfb;
+}
+header,
+.navigation,
+.topnav {
+  background-color: #beadfa;
+  padding: 10px;
+}
+.selfie:hover{
+  position: center;
+  top: -4px;
+}
+a:hover{
+  position: relative;
+  background-color: #FF6969;
+  color: black;  
+  transition: background-color 1.5s;
+}
+.goals:hover{
+  width: 120%;
+  height: 120%;
+}
+.knowledge:hover{
+  width: 131.5%;
+  height: 131.5%;
+}
+.mywork:hover{
+  width: 125%;
+  height: 125%;
+}
+.hobbies:hover{
+  width:110%;
+  height:110%;
+}
+@media(prefers-reduced-motion: no-preference){ 
+  #box1{
+  width: 350px;
+  height: 25px;
+  background: #F31559;
+  font-size: 25px;
+  text-align: center;
+  animation: slide;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-play-state: running;
+  }}
+@keyframes slide{
+  from{margin-left: 100%;} 
+  to{margin-left: 0%;}
+}
